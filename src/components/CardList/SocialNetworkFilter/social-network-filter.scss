@@ -1,0 +1,39 @@
+.network-tabs-wrapper {
+  margin: 10px 20px;
+  width: 400px;
+
+  button {
+    min-width: 75px;
+    padding: 7px;
+    margin-right: 2px;
+    color: #323232;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #f6f5f5;
+    box-shadow: 0 0 2px 0 #868686;
+
+    &:hover {
+      box-shadow: 0 0 2px 0 #424242;
+    }
+
+    &.active {
+      background: #3979ce;
+      color: #ffffff;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .network-tabs-wrapper {
+    margin: 10px 3px;
+    width: 280px;
+    background: lightgoldenrodyellow;
+
+    button {
+      min-width: 50px;
+      padding: 3px;
+      font-size: 0.7rem;
+      font-weight: 400;
+    }
+  }
+}

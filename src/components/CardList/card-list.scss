@@ -1,0 +1,32 @@
+.main-content {
+  margin: 20px 10px;
+  padding: 10px 5px;
+  background: #fff;
+  box-shadow: 0 0 2px #808080;
+
+  .total-items-counter {
+    padding: 15px 20px 0;
+    font-size: 1.2rem;
+    span {
+      font-weight: 600;
+      padding-right: 10px;
+    }
+  }
+
+  .card-list-wrapper {
+    background: #f9f9f9;
+
+    .cards-inner-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .main-content .card-list-wrapper .cards-inner-wrapper {
+    justify-content: space-around;
+  }
+}

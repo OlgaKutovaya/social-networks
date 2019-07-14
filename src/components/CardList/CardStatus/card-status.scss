@@ -1,0 +1,39 @@
+.card-status-wrapper {
+  display: flex;
+  margin-top: 10px;
+  min-height: 60px;
+  border-bottom: 1px solid lightgray;
+
+  button {
+    padding: 10px 80px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #ffffff;
+    color: #8c8c8c;
+
+    &:hover {
+      color: #0000bb;
+    }
+
+    &.active {
+      border-bottom: 2px solid #3979ce;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .card-status-wrapper button {
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-status-wrapper {
+    width: 280px;
+    button {
+      padding: 10px;
+      font-size: 0.8rem;
+    }
+  }
+}

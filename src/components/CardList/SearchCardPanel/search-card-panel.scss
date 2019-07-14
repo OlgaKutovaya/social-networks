@@ -1,0 +1,35 @@
+.search-panel-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .search-input {
+    width: 90%;
+    padding: 7px 20px;
+    border: none;
+    outline: none;
+  }
+
+  button {
+    margin: 5px 25px;
+    padding: 9px 40px;
+    background: #3979ce;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 3px;
+
+    &:hover {
+      background: #2e63a9;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search-panel-wrapper {
+    button {
+      margin: 5px 10px;
+      font-size: 0.8rem;
+    }
+  }
+}
